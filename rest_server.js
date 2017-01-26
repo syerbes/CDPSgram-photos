@@ -5,9 +5,9 @@ var multer = require('multer');
 
 var app = express();
 
-var media_path = __dirname + '/media/';
+var media_path ='/mnt/nas/';
 
-var port = parseInt(process.env.PORT || '8000', 10);
+var port = parseInt(process.env.PORT || '80', 10);
 app.listen(port);
 
 app.use(function (req, res, next) {
